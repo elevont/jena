@@ -2018,6 +2018,15 @@ cliui@^8.0.1:
     strip-ansi "^6.0.1"
     wrap-ansi "^7.0.0"
 
+codemirror-lang-turtle@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/codemirror-lang-turtle/-/codemirror-lang-turtle-0.0.2.tgz#2db4e56020b8defbbfa0788a85045404b494c957"
+  integrity sha512-YN9JzdxfUv2DKNHLZa8L7sG5StOri8ZHbMzY/zJhrq6pYR0peJaeN+GyQZaXl6fYmmq8hurf/BOqTYPh7Uzgcw==
+  dependencies:
+    "@codemirror/language" "^6.0.0"
+    "@lezer/highlight" "^1.0.0"
+    "@lezer/lr" "^1.0.0"
+
 codemirror@6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-6.0.1.tgz#62b91142d45904547ee3e0e0e4c1a79158035a29"

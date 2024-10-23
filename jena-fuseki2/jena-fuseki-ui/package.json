@@ -31,6 +31,7 @@
     "axios": "^1.6.1",
     "bootstrap": "^5.3.2",
     "codemirror": "6.0.1",
+    "codemirror-lang-turtle": "^0.0.2",
     "follow-redirects": "^1.15.4",
     "mitt": "^3.0.1",
     "qs": "6.13.0",
