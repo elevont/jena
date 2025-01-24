@@ -78,15 +78,15 @@ public class LangTags {
                 continue;
             }
             first = false;
-            // All subtags after language
+            // All sub-tags after language
             sb.append('-');
             if ( singleton )
-                // Always lowercase
+                // Always lower-case
                 sb.append(lowercase(s));
             else {
                 // case depends on ;length
                 sb.append(strcase(s));
-                // is it the start of an extension or privateuse
+                // is it the start of an extension or private use
                 // XXX s.length()==1?
                 if ( s.length() == 1 )
                     singleton = true;
