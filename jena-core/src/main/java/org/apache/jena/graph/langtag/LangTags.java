@@ -100,7 +100,6 @@ public class LangTags {
         // Split efficiently(?) based on [a-z][A-Z][0-9] units separated by "-"s
         StringBuilder sb = new StringBuilder();
 
-        boolean start = true;
         for ( int idx = 0; idx < x.length(); idx++ ) {
             char ch = x.charAt(idx);
             if ( isA2ZN(ch) ) {
