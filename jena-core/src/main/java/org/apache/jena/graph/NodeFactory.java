@@ -262,7 +262,7 @@ public class NodeFactory {
         return n;
     }
 
-    /*package*/ static final boolean legacyLangTag = false;
+    /*package*/ static final boolean legacyLangTag = true;
     /** Prepare the language tag - apply formatting normalization */
     private static String formatLanguageTag(String langTagStr) {
         // LangTags.formatLangtag(input) except with the legacy option.
@@ -290,7 +290,7 @@ public class NodeFactory {
         return createLiteralDT(lex, dtype);
     }
 
-    /*package*/ static final boolean legacyDataType = false;
+    /*package*/ static final boolean legacyDataType = true;
     /**
      * Build a typed literal node from its lexical form.
      *
