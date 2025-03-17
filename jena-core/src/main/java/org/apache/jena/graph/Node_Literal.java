@@ -55,7 +55,9 @@ public class Node_Literal extends Node
 
     /* package */ Node_Literal(String lex, RDFDatatype dtype) {
         Objects.requireNonNull(lex, "null lexical form for literal");
-        Objects.requireNonNull(dtype, "null datatype");
+        if (!NodeFactory.legacyDataType) {
+            Objects.requireNonNull(dtype, "null datatype");
+        }
         this.label = LiteralLabelFactory.create(lex, dtype);
     }
 

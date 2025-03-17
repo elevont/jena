@@ -290,6 +290,7 @@ public class NodeFactory {
         return createLiteralDT(lex, dtype);
     }
 
+    /*package*/ static final boolean legacyDataType = false;
     /**
      * Build a typed literal node from its lexical form.
      *
@@ -300,8 +301,9 @@ public class NodeFactory {
      */
     public static Node createLiteralDT(String lex, RDFDatatype dtype) {
         Objects.requireNonNull(lex, "null lexical form for literal");
-        if ( dtype == null )
+        if ( dtype == null && !legacyDataType) {
             dtype = XSDDatatype.XSDstring;
+        }
         return new Node_Literal(lex, dtype);
     }
 
